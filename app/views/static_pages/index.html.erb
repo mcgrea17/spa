@@ -17,11 +17,20 @@
 
 <script>
   $(function() {
-     $('#new-form').submit(function(event) {
+    $('#new-form').submit(function(event) {
       event.preventDefault();
       var textbox = $('.new-todo');
-      console.log("intercepted.");
+      var payload = {
+        task: {
+          title: textbox.val()
+        }
+      };
+      $.post("/tasks", payload).success(function(data) {
+        console.log("Successful HTTP Request");
+      });
     });
+
+
 
     //the taskHtml method takes in a JavaScript representations of
     // the task and produces an HTML representationusing <li> tags
