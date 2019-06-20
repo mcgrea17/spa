@@ -33,11 +33,9 @@ $(function() {
         }).success(function(data) {
             var liHtml = taskHtml(data);
             var $li = $("#listItem-" + data.id);
-            console.log("here =" + $li + " plus " + liHtml);
+            console.log("here =" + liHtml + " plus " + $li);
             $li.replaceWith(liHtml);
-            console.log("here =" + liHtml + " mid " + $li);
             $('.toggle').change(toggleTask);
-            console.log(liHtml + " and " + $li);
         });
       }
   
