@@ -1,22 +1,36 @@
-<section class="todoapp">
-    <header class="header">
-        <h1>ToDos</h1>
-        <form id="new-form">
-         <input type="text" class="new-todo" placeholder="What needs to be done?" />
-        </form>
 
-    </header>
+  
+  <div class="todoapp">
+    
+      <header class="header">
+          <h1>ToDos</h1>
+      </header>
+   
+      <div class="pics">
+          <%= image_tag 'ironing.jpg', class: 'style_image_right img-fluid' %>
+          <%= image_tag 'mail.jpg', class: 'style_image_left img-fluid' %>
+          <%= image_tag 'workout.png', class: 'style_image_right img-fluid' %>
+          <%= image_tag 'carpool.png', class: 'style_image_left img-fluid' %>
+      </div>
 
-    <section class="main">
-     <ul class="todo-list">
+      <div class="box">
 
-    </ul>
+          <form id="new-form">
+            <input type="text" class="new-todo" placeholder="What needs to be done?" />
+          </form>
+          <section class="main">
+            <ul class="todo-list">
 
-    </section>
-</section>
-<section class="author">
-  A <%= link_to "todo-mvc", "http://todomvc.com" %>
-  application, built by
-  <%= link_to "Ken Mazaika", "http://github.com/kenmazaika" %>
-</section>
+            </ul>
+          </section>
+      </div>
+      <div class="pics">
+        <%= image_tag 'cook.png', class: 'style_image_left img-fluid ' %>
+        <%= image_tag 'cleaner.jpg', class: 'style_image_right img-fluid' %>
+        <%= image_tag 'shopping.jpg', class: 'style_image_left img-fluid' %>
+        <%= image_tag 'tennis.png', class: 'style_image_right img-fluid' %>
 
+      </div>
+    
+  </div>
+  

@@ -4,12 +4,21 @@
     <title>Spa</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://fonts.googleapis.com/css?family=Vast+Shadow&display=swap" rel="stylesheet"> 
     <%= stylesheet_link_tag    "application", media: "all" %>
     <%= javascript_include_tag "application" %>
   </head>
 
   <body>
     <%= yield %>
+    <footer class="footer">
+      <div class="author">
+          &nbsp;  
+        <h3><br>  &nbsp;  &nbsp;<%= link_to "todo-mvc", "http://todomvc.com" %> 
+         &nbsp; application, built by <%= link_to "Ken Mazaika", "http://github.com/kenmazaika" %></h3>
+
+      </div>
+    </footer>
   </body>
 </html>
